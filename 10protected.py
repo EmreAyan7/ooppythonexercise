@@ -19,7 +19,7 @@ class Dog(Animal):
           return self_makesound()
      
 
-dog = Dog("kURT","Golden retriever")
+dog = Dog("rony","Golden retriever")
 
 print (dog.display_info())
 
