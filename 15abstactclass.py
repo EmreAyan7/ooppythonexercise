@@ -4,9 +4,10 @@ class Shape(ABC):
     @abstractmethod
     def area(self):
         pass
-                #if ı use Shape class in another class we must use this two method.(inheritance)
-    
-    @abstractmethod
+                #if ı use Shape class in another class we must use this two method.(inheritance
+
+
+
     def perimeter(self):
         pass
 
@@ -26,13 +27,10 @@ class Circle(Shape):
         self.radius=r
 
     def area(self):
-        return self.radius**2*3.1415
+        print ( self.radius**2*3.1415)
     
     def perimeter(self):
         return 2*3.1415*self.radius
     
 daire=Circle(10)
-print(f"ucgen alanı : {daire.area()}, çevresi:{daire.perimeter()}")
-
-dikdörtgen=Rectangle(10,5)
-print(f"dikdortgen alanı : {dikdörtgen.area()}, çevresi:{dikdörtgen.perimeter()}")
+daire.area()
